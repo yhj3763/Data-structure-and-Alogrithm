@@ -147,8 +147,9 @@ Ldata LinkedList::remove(Ldata value) {
         prev->next = cur->next;     
     }
     delete rnode;    // Remove cur value that we want to remove by using rnode
-    return rdata;    // Return removed data that we stored above before we remove node
     numofdata--;     // Update number of node in the list
+    return rdata;    // Return removed data that we stored above before we remove node
+  
 
 }
 
