@@ -11,15 +11,15 @@ typedef int Data;
 class Stack {
 
 public:
-	Stack();				//Constructor
+	Stack();		//Constructor
 	void push(Data value);  //Push to stack
-	Data pop();				//Pop from stack
-	Data peek();			//Peek from stack
+	Data pop();		//Pop from stack
+	Data peek();		//Peek from stack
 	bool isEmpty();         //Check whether stack is empty
 
 private:
 	Data arr[STACK_LEN];    //array
-	int topindex;			//index for array
+	int topindex;		//index for array
 };
 
 //Constructor that initialize value
@@ -37,7 +37,7 @@ void Stack::push(Data value) {
 		return;
 	}
 
-	topindex += 1;			//Increase value for index
+	topindex += 1;		//Increase value for index
 	arr[topindex] = value;  //Put value into array
 }
 
@@ -52,7 +52,7 @@ Data Stack::pop() {
 	}
 
 	Data rdata = arr[topindex];	//Store value we want to pop first.
-	topindex -= 1;				//Decrease vlaue for index, so it means one value is removed from stack
+	topindex -= 1;			//Decrease vlaue for index, so it means one value is removed from stack
 
 	return rdata;	//return removed value
 
