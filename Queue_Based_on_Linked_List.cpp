@@ -1,4 +1,4 @@
-//It is implementing circular queue in c++
+//It is implementing queue in c++
 //It is based on Linke List
 
 #include <iostream>
