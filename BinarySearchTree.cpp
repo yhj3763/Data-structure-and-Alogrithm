@@ -14,17 +14,17 @@ struct Node {
 //It is class for Binary Search Tree
 class BStree {
 private:
-	Node* root;						//it includes node to indicate root
+	Node* root;				//it includes node to indicate root
 
 public:
-	BStree();						//It is constructor for Binary Search Tree
+	BStree();				//It is constructor for Binary Search Tree
 	void insert(Data value);		//It is insert function for Binary Search Tree
 	bool search(Data target);		//It is search function to check whether value is in Binary Search Tree
-	Node* getroot();				//It is getroot function to root for traversal
+	Node* getroot();			//It is getroot function to root for traversal
 	Node* remove(Data target);		//It is remove function for Binary Search Tree
-	void preorder(Node* travel);	//It is function for Preorder Traversal
+	void preorder(Node* travel);		//It is function for Preorder Traversal
 	void inorder(Node* travel);		//It is function for Inorder Traversal
-	void postorder(Node* travel);	//It is function for Postorder Traversal
+	void postorder(Node* travel);		//It is function for Postorder Traversal
 	
 };
 
